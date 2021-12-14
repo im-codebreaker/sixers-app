@@ -1,3 +1,6 @@
 .App {
   isolation: isolate;
 }
+h1 {
+  color: var(--color-primary-blue);
+}
