@@ -1,5 +1,6 @@
-import './App.css';
 import logo from './logo_sixers.svg'
+import './App.scss';
+
 export default function App() {
   return (
     <div className="App">

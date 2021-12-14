@@ -1,0 +1,32 @@
+@font-face {
+  font-family: titleFont;
+  src: url(../fonts/BakbakOne-Regular.woff2) format('woff2'),
+    url(../fonts/BakbakOne-Regular.woff) format('woff'),
+    url(../fonts/BakbakOne-Regular.ttf) format('trutype'),
+    url(../fonts/BakbakOne-Regular.eot) format('embedded-opentype'),
+    url(../fonts/BakbakOne-Regular.svg) format('svg');
+}
+@font-face {
+  font-family: contentLight;
+  src: url(../fonts/Mukta-Light.woff2) format('woff2'),
+    url(../fonts/Mukta-Light.woff) format('woff'),
+    url(../fonts/Mukta-Light.ttf) format('trutype'),
+    url(../fonts/Mukta-Light.eot) format('embedded-opentype'),
+    url(../fonts/Mukta-Light.svg) format('svg');
+}
+@font-face {
+  font-family: contentRegular;
+  src: url(../fonts/Mukta-Regular.woff2) format('woff2'),
+    url(../fonts/Mukta-Regular.woff) format('woff'),
+    url(../fonts/Mukta-Regular.ttf) format('trutype'),
+    url(../fonts/Mukta-Regular.eot) format('embedded-opentype'),
+    url(../fonts/Mukta-Regular.svg) format('svg');
+}
+@font-face {
+  font-family: contentBold;
+  src: url(../fonts/Mukta-Bold.woff2) format('woff2'),
+    url(../fonts/Mukta-Bold.woff) format('woff'),
+    url(../fonts/Mukta-Bold.ttf) format('trutype'),
+    url(../fonts/Mukta-Bold.eot) format('embedded-opentype'),
+    url(../fonts/Mukta-Bold.svg) format('svg');
+}

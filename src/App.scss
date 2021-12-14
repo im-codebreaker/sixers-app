@@ -1,0 +1,22 @@
+@use 'styles/_reset.scss';
+@use 'styles/_typography.scss';
+@use 'styles/colors';
+@use 'styles/functions';
+
+.App {
+  isolation: isolate;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: titleFont;
+}
+
+h1 {
+  color: colors.$primary-blue;
+  margin-top: functions.space(2);
+}
