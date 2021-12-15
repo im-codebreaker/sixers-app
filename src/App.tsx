@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Layout from './components/Layout';
 
 import './App.scss';
 
@@ -7,9 +8,7 @@ export default function App() {
   return (
     <div className='App'>
       <Header />
-      <main className='App-main'>
-        <h1>Philadephia 76ers</h1>
-      </main>
+      <Layout />
       <Footer />
     </div>
   );
