@@ -1,0 +1,12 @@
+@use '../styles/colors';
+@use '../styles/functions';
+
+.App-footer {
+  padding: functions.space(4) functions.space(2);
+  color: colors.$pure-white;
+  background-color: colors.$primary-blue;
+}
+
+.heart {
+  color: colors.$primary-red;
+}
