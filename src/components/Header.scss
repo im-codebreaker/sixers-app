@@ -1,0 +1,93 @@
+@use '../styles/functions';
+@use '../styles/colors';
+
+.App-header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 0;
+  right: 0;
+  min-height: 80px;
+  min-width: 100%;
+  z-index: 1;
+  background: colors.$primary-blue;
+}
+
+.navbar {
+  position: relative;
+  width: 100%;
+  background-color: transparent;
+}
+
+.navbar-input {
+  display: none;
+}
+
+.navbar-burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: calc(50% - 17.5px);
+  right: 17.5px;
+  width: 35px;
+  height: 35px;
+}
+.icon-bar {
+  display: block;
+  width: functions.space(3);
+  border: 1px solid colors.$pure-white;
+  border-radius: 1px;
+  transition: all 150ms ease;
+}
+
+.navbar-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: colors.$primary-blue;
+  transition: all 1500ms ease-in-out;
+  z-index: -1;
+}
+
+.navbar-input:not(:checked) ~ .navbar-menu {
+  transform: translate3d(0, -100vh, 0);
+}
+.navbar-input:checked ~ .navbar-menu {
+  transform: translate3d(0, 0, 0);
+}
+.navbar-menu_item {
+  margin: functions.space(3) 0;
+}
+.navbar-menu_item-links {
+  font-size: functions.fontSize(4);
+  color: colors.$pure-white;
+}
+
+.navbar-input:checked ~ .navbar-burger .icon-bar:nth-of-type(1) {
+  transform: translate3d(0, 1px, 0) rotate(0deg);
+}
+.navbar-input:checked ~ .navbar-burger .icon-bar:nth-of-type(2) {
+  transform: translate3d(0, 0, 0) rotate(0deg);
+}
+.navbar-input:checked ~ .navbar-burger .icon-bar:nth-of-type(3) {
+  transform: translate3d(0, -1px, 0) rotate(0deg);
+}
+.navbar-input:not(:checked) ~ .navbar-burger .icon-bar:nth-of-type(1) {
+  transform: translate3d(0, 8px, 0);
+}
+.navbar-input:not(:checked) ~ .navbar-burger .icon-bar:nth-of-type(3) {
+  transform: translate3d(0, -8px, 0);
+}
+
+.logo {
+  margin-left: functions.space(4);
+}
+
+/* END ANIMATED MINUS */
