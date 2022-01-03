@@ -1,7 +1,7 @@
-@use 'styles/_reset.scss';
-@use 'styles/_typography.scss';
-@use 'styles/colors';
-@use 'styles/functions';
+@use './assets/styles/_reset';
+@use './assets/styles/_typography.scss';
+@use './assets/styles/colors';
+@use './assets/styles/functions';
 
 .App {
   isolation: isolate;

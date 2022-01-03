@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.scss';
-import logo from '../logo_sixers.svg';
+import logo from '../assets/medias/logo_sixers.svg';
 
 export default function Header() {
   return (
