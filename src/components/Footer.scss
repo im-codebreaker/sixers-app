@@ -6,7 +6,55 @@
   color: colors.$pure-white;
   background-color: colors.$primary-blue;
 }
-
+.footer-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-copyright {
+  text-align: center;
+}
+.social-networks {
+  display: flex;
+  flex-direction: row;
+}
 .heart {
   color: colors.$primary-red;
+}
+.sixers {
+  background: transparent url('../assets/medias/sixers-icon.svg') center center
+    no-repeat;
+}
+.facebook {
+  background: transparent url('../assets/medias/facebook-icon.svg') center
+    center no-repeat;
+}
+.instagram {
+  background: transparent url('../assets/medias/instagram-icon.svg') center
+    center no-repeat;
+}
+.twitter {
+  background: transparent url('../assets/medias/twitter-icon.svg') center center
+    no-repeat;
+}
+.youtube {
+  background: transparent url('../assets/medias/youtube-icon.svg') center center
+    no-repeat;
+}
+
+@media screen and (min-width: 992px) {
+  .footer-wrapper {
+    flex-direction: row;
+  }
+  .footer-copyright {
+    text-align: left;
+  }
+  .social-networks i {
+    transition: translateY 800ms;
+  }
+  .social-networks i:hover {
+    transform: translateY(functions.space(1));
+    transition: translateY 800ms;
+  }
 }
