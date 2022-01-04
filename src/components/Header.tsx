@@ -1,7 +1,5 @@
 import React from 'react';
 import './Header.scss';
-import Layout from './Layout';
-import History from './History';
 import logo from '../assets/medias/logo_sixers.svg';
 import { Link } from 'react-router-dom';
 
