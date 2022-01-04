@@ -1,6 +1,24 @@
+@use '../assets/styles/colors';
+
 .error404 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 88.3vh;
+}
+.error-message {
+  margin: 1rem 0;
+}
+.pathname {
+  font-weight: 700;
+  color: colors.$primary-red;
+}
+.back-homepage {
+  float: right;
+  color: colors.$primary-blue;
+}
+
+.back-homepage:hover {
+  color: colors.$dark-blue;
 }
