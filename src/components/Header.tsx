@@ -1,20 +1,24 @@
 import React from 'react';
 import './Header.scss';
+import Layout from './Layout';
+import History from './History';
 import logo from '../assets/medias/logo_sixers.svg';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
     <header className='App-header'>
       <nav className='navbar' role='navigation'>
         <input id='navbarInput' className='navbar-input' type='checkbox' />
-
-        <img
-          src={logo}
-          className='logo'
-          width='50px'
-          height='50px '
-          alt='Logo officile des Philadelphia 76ers'
-        />
+        <Link to='/'>
+          <img
+            src={logo}
+            className='logo'
+            width='50px'
+            height='50px '
+            alt='Logo officile des Philadelphia 76ers'
+          />
+        </Link>
 
         <div className='navbar-burger'>
           <label htmlFor='navbarInput'>
@@ -26,29 +30,29 @@ export default function Header() {
 
         <ul className='navbar-menu'>
           <li className='navbar-menu_item'>
-            <a className='navbar-menu_item-links' href='/'>
-              Link 1
-            </a>
+            <Link to='/history' className='navbar-menu_item-links'>
+              History
+            </Link>
           </li>
           <li className='navbar-menu_item'>
-            <a className='navbar-menu_item-links' href='/'>
-              Link 2
-            </a>
+            <Link to='/roster' className='navbar-menu_item-links'>
+              Roster
+            </Link>
           </li>
           <li className='navbar-menu_item'>
-            <a className='navbar-menu_item-links' href='/'>
-              Link 3
-            </a>
+            <Link to='/schedule' className='navbar-menu_item-links'>
+              Schedule
+            </Link>
           </li>
           <li className='navbar-menu_item'>
-            <a className='navbar-menu_item-links' href='/'>
-              Link 4
-            </a>
+            <Link to='/stats' className='navbar-menu_item-links'>
+              Stats
+            </Link>
           </li>
           <li className='navbar-menu_item'>
-            <a className='navbar-menu_item-links' href='/'>
-              Link 5
-            </a>
+            <Link to='/hall-of-fame' className='navbar-menu_item-links'>
+              Hall of Fame
+            </Link>
           </li>
         </ul>
       </nav>
