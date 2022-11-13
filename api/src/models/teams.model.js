@@ -13,7 +13,7 @@ module.exports = function (app) {
         table.string('color',6).notNullable();
         table.string('alternateColor',6).notNullable();
         table.timestamp('createdAt');
-        table.timestamp('updateddAt');
+        table.timestamp('updatedAt');
       })
         .then(() => console.log(`Created ${tableName} table`))
         .catch(e => console.error(`Error creating ${tableName} table`, e));
