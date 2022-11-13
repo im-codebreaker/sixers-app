@@ -5,5 +5,9 @@
   "paginate": {
     "default": 10,
     "max": 50
+  },
+  "postgres": {
+    "client": "pg",
+    "connection": "postgres://xxxx:xxxx@localhost:5432/sixers"
   }
 }
